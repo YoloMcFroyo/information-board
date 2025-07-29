@@ -1,0 +1,9 @@
+.card {
+  background-color: #1e1e1e; /* A dark, modern background */
+  border-radius: 12px;          /* Rounded corners */
+  padding: 24px;                /* Space inside the card */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* A soft shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* A subtle border */
+  color: #f0f0f0;               /* Light text color for contrast */
+  overflow: hidden;             /* Ensures content respects the rounded corners */
+}
