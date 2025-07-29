@@ -1,26 +1,23 @@
 import "../App.css";
 
-function Livestream ({url}) {
+function YoutubeLivestream ({url}) {
 
-  function AddPropertiesToUrl() {
-    updatedUrl = url + "?controls=0&autoplay=1&mute=1";
-    return updatedUrl;
-  }
+  const baseUrl = url.split('?')[0];
+  const videoId = baseUrl.split('/').pop();
+  const embedUrl = `${baseUrl}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videoId}`;
 
   return (
-    <div className="grid-item">
-      <h2>Livestream</h2>
       <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/4cgSE12k9Sc?si=YAgOUJm0tCM3vgyu&amp;controls=0&autoplay=1&mute=1"
+        width="100%"
+        height="100%"
+        src={embedUrl}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
+        style={{ border: "none" }}
       ></iframe>
-    </div>
   );
 }
 
-export default Livestream;
+export default YoutubeLivestream;
