@@ -12,9 +12,9 @@ function App() {
 
   return (
     <div>
-      <header className="grid grid-cols-6 bg-amber-800"> 
-        <h1 className="bg-red-400 col-span-2 col-start-3 ">Datom</h1>
-        <div className="bg-amber-400 col-span-1 col-start-6">
+      <header className="grid grid-cols-6 bg-amber-800 pe-4"> 
+        <h1 className="bg-red-400 col-span-2 col-start-3 text-center">Datom</h1>
+        <div className="bg-amber-400 col-span-1 col-start-6 text-end">
           <p>11:25PM</p>
           <p>10/22/2025</p>
         </div>
