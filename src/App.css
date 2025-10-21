@@ -17,3 +17,34 @@ body{
  width: 100vw;
  overflow: scroll
 }
+
+.MainContent {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Column1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ff787881;
+}
+
+.Column2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #6eff8366;
+}
+
+.Column3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #6ec1ff66;
+}
