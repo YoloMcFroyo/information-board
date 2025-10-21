@@ -17,10 +17,11 @@ function App() {
   }, []);
 
   // YouTube livestream links for the cards
-  const _UWLakeWashingtonLiveStream = "https://www.youtube.com/embed/x-Adyqr58NE?si=ne_CfIwp7LwJPxlL";
+  const _UWLakeWashingtonLiveStream = "https://www.youtube.com/embed/xVqbVmZw8qk?si=9TbSFlysyCBF7LTU";
   const _UWContinuumCollegeCam = "https://www.youtube.com/embed/4cgSE12k9Sc?si=Vx05CrvskjUd9sB5";
   const _SeaTacAirPortMtRainierCam = "https://www.youtube.com/embed/RGP247XSw78?si=2wyvnXui4x2gPNX4";
   const _WenatcheeValley = "https://www.youtube.com/embed/H2Z8qMobF_w?si=KPXiqZlyi-HS2m_6";
+  const _RedSquareCam = "https://www.youtube.com/embed/tcExTFC3Jdo?si=IZI1SjlqaSA95VDy";
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -42,7 +43,7 @@ function App() {
               <YoutubeLivestream url={_UWContinuumCollegeCam} />
             </Card>
             <Card>
-              <YoutubeLivestream url={_SeaTacAirPortMtRainierCam} />
+              <YoutubeLivestream url={_RedSquareCam} />
             </Card>
             <Card>
               <YoutubeLivestream url={_WenatcheeValley} />
